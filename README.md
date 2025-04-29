@@ -116,7 +116,34 @@ SelfMastery is built using the following technologies:
         ```
 
 ##  Project Structure
-SelfMastery/├── .github/                  # GitHub configuration files├── .vscode/                   # VSCode configuration files (optional)├── mobile/                 # React Native mobile application│   ├── App.js                # Main application component│   ├── index.js              # Entry point for React Native│   ├── android/              # Android-specific files│   ├── ios/                  # iOS-specific files│   ├── src/                  # Source code│   │   ├── components/       # Reusable components│   │   ├── screens/          # Application screens│   │   ├── navigation/       # Navigation setup│   │   ├── firebase.js       # Firebase configuration│   │   └── ...│   ├── .env.mobile           # Mobile Environment variables├── web/                    # React.js web application│   ├── pages/                # Next.js pages│   ├── public/               # Static assets│   ├── src/                  # Source code│   │   ├── components/       # Reusable components│   │   ├── styles/           # Styles (CSS, Sass, etc.)│   │   ├── firebase.js       # Firebase configuration│   │   └── ...│   ├── .env.web              # Web Environment Variables├── README.md               # Project README├── .gitignore                # Specifies intentionally untracked files└── package.json              # Project dependencies
+SelfMastery/
+├── .github/                  # GitHub configuration files
+├── .vscode/                   # VSCode configuration files (optional)
+├── mobile/                 # React Native mobile application
+│   ├── App.js                # Main application component
+│   ├── index.js              # Entry point for React Native
+│   ├── android/              # Android-specific files
+│   ├── ios/                  # iOS-specific files
+│   ├── src/                  # Source code
+│   │   ├── components/       # Reusable components
+│   │   ├── screens/          # Application screens
+│   │   ├── navigation/       # Navigation setup
+│   │   ├── firebase.js       # Firebase configuration
+│   │   └── ...
+│   ├── .env.mobile           # Mobile Environment variables
+├── web/                    # React.js web application
+│   ├── pages/                # Next.js pages
+│   ├── public/               # Static assets
+│   ├── src/                  # Source code
+│   │   ├── components/       # Reusable components
+│   │   ├── styles/           # Styles (CSS, Sass, etc.)
+│   │   ├── firebase.js       # Firebase configuration
+│   │   └── ...
+│   ├── .env.web              # Web Environment Variables
+├── README.md               # Project README
+├── .gitignore                # Specifies intentionally untracked files
+└── package.json              # Project dependencies
+
 ## Contributing
 
 Contributions are welcome!  Please follow these steps:

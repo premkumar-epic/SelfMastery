@@ -1,0 +1,148 @@
+/* src/pages/TaskListDetail.css */
+.task-list-detail-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.list-detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-detail-header .back-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-right: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.list-detail-header .back-button:hover {
+  background-color: #5a6268;
+}
+
+.list-detail-header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #2c3e50;
+}
+
+.create-task-section {
+  background-color: #eaf7ed; /* Light green background */
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.create-task-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #28a745; /* Green for add task */
+  font-size: 1.8em;
+}
+
+.create-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-task-form input[type="text"],
+.create-task-form textarea,
+.create-task-form input[type="date"],
+.create-task-form select {
+  padding: 12px 15px;
+  border: 1px solid #cceeff;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-task-form textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 80px;
+}
+
+.create-task-form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.create-task-form .form-row label {
+  flex: 1; /* Distribute space evenly */
+  min-width: 150px; /* Minimum width for each label/input group */
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  color: #555;
+  font-weight: 600;
+}
+
+.create-task-form button {
+  background-color: #007bff; /* Blue for add task */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  align-self: center; /* Center the button */
+  width: 50%; /* Max width for button */
+  max-width: 200px;
+}
+
+.create-task-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.create-task-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.tasks-list-section {
+  margin-top: 40px;
+}
+
+.tasks-list-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid for tasks */
+  gap: 20px;
+  justify-content: center;
+  padding: 0 5px;
+}
